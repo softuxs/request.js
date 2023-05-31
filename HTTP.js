@@ -7,7 +7,7 @@ class HTTP {
     
     // Step 1: Prepare an URL
     var public_url = new URL(options.URL);
-    var client = this.client;
+    var client = new XMLHttpRequest();
 
     // Step 1: If contains params for send
     if ( options.hasOwnProperty("params") ) {
